@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{judul}}</title>
+</head>
+<body>
+
+    <img style="width: 100%;" src="{% static banner %}" alt="">
+    <h1>INI ADALAH HALAMAN BLOG</h1>
+    <h2>Editor: {{editor}}</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatem, ex repudiandae deserunt explicabo necessitatibus ducimus reiciendis voluptatibus minima est amet dicta neque harum tempore mollitia saepe, illum repellat cupiditate.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatem, ex repudiandae deserunt explicabo necessitatibus ducimus reiciendis voluptatibus minima est amet dicta neque harum tempore mollitia saepe, illum repellat cupiditate.</p>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatem, ex repudiandae deserunt explicabo necessitatibus ducimus reiciendis voluptatibus minima est amet dicta neque harum tempore mollitia saepe, illum repellat cupiditate.</p>
+
+    <ul>
+       
+        {% for link,name in nav %}
+
+            <li>
+                <a href="{{link}}" little="">{{name}}</a>
+            </li>
+
+        {% endfor %}
+    
+    </ul>
+</body>
+</html>

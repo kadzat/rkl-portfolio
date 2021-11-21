@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{judul}}</title>
+</head>
+<body>
+
+    <img style="width: 100%;" src="{% static banner %}" alt="">
+    <h1>{{subjudul}}</h1>
+    <h2>Editor: {{editor}}</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus quos dicta pariatur impedit alias laborum quibusdam exercitationem quia blanditiis cum accusamus eius inventore, eos optio iure officia obcaecati temporibus? Rerum!</p>
+    
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus quos dicta pariatur impedit alias laborum quibusdam exercitationem quia blanditiis cum accusamus eius inventore, eos optio iure officia obcaecati temporibus? Rerum!</p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus quos dicta pariatur impedit alias laborum quibusdam exercitationem quia blanditiis cum accusamus eius inventore, eos optio iure officia obcaecati temporibus? Rerum!</p>
+    <ul>
+        {% for link,name in nav %}
+
+        <li>
+            <a href="{{link}}">{{name}}</a>
+        </li>
+   
+    {% endfor %}
+    </ul>
+</body>
+</html>

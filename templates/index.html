@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{judul}}</title>
+    <link rel="stylesheet" type="text/css" href="{% static "css/styles.css" %}">
+</head>
+<body>
+    <img id="banner" src="{% static banner %}" alt="">
+    <nav>
+        <ul>
+            {% for linkk,name in nav %}
+                <li>
+                    <a href="{{linkk}}">{{name}}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+    
+    <h1>{{subjudul}}</h1>
+    <h2>Editor: {{editor}}</h2>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus quos dicta pariatur impedit alias laborum quibusdam exercitationem quia blanditiis cum accusamus eius inventore, eos optio iure officia obcaecati temporibus? Rerum!</p>
+
+</body>
+</html>
